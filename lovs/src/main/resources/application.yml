@@ -1,0 +1,8 @@
+lov:
+  base-url: ${LOV_BASE_URL:}    # the UAT LOV service, e.g. https://<uat host>/lov
+  client-id: ${LOV_CLIENT_ID:}  # sent as the clientId header on every GET
+  uris:                         # TYPE: uri, one GET each; a full https://... uri ignores base-url
+    # masters
+    MARITAL_STATUS: /v1/masters/marriage-status
+    RELIGION: /v1/masters/religions
+    LAST_EDUCATION_STATUS: /v1/masters/educations
